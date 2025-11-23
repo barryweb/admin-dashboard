@@ -1,0 +1,81 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family:
+	"Roboto", 
+	system-ui, 
+	"Segoe UI", 
+	Helvetica, 
+	Arial, 
+	sans-serif, 
+	"Apple Color Emoji", 
+	"Segoe UI Emoji", 
+	"Segoe UI Symbol";
+}
+
+.grid-container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 500px 1fr;
+	grid-template-rows: 300px auto;
+}
+
+.sidebar {
+	background: skyblue;
+	grid-row: 1 / 3;
+	padding: 2rem;
+}
+
+ul {
+	display: grid;
+	gap: 1rem;
+}
+
+.wrapper {
+	list-style: none;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 80px 1fr;	
+}
+
+.wrapper span {
+	color: white;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.wrapper svg {
+	max-width: 38px;
+	width: 100%;
+	height: auto;
+	justify-self: center;
+}
+
+.dashboard.wrapper {
+	margin-bottom: 2rem;
+}
+
+.dashboard.wrapper svg {
+	max-width: 56px;
+	width: 100%;
+	height: auto;
+}
+
+.dashboard.wrapper span {
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.communities.wrapper {
+	margin-bottom: 5rem;
+}
+
+svg, img {
+	width: 50px;
+}
