@@ -86,6 +86,7 @@ ul {
 form {
 	display: grid;
 	grid-template-columns: 46px 1fr;
+	padding-top: 10px;
 }
 
 form svg {
