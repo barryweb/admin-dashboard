@@ -30,6 +30,7 @@ body {
 	background: skyblue;
 	grid-row: 1 / 3;
 	padding: 2rem;
+	padding-top: 1rem;
 }
 
 ul {
@@ -51,9 +52,7 @@ ul {
 }
 
 .wrapper svg {
-	max-width: 38px;
-	width: 100%;
-	height: auto;
+	width: 38px;
 	justify-self: center;
 }
 
@@ -62,9 +61,7 @@ ul {
 }
 
 .dashboard.wrapper svg {
-	max-width: 56px;
-	width: 100%;
-	height: auto;
+	width: 56px;
 }
 
 .dashboard.wrapper span {
@@ -76,6 +73,101 @@ ul {
 	margin-bottom: 5rem;
 }
 
-svg, img {
-	width: 50px;
+.header {
+	display: grid;
+	grid-template-columns: minmax(350px, 2fr) minmax(350px, 1fr) minmax(500px, 1fr);
+	grid-template-rows: 90px 1fr;
+	padding: 2rem;
+	padding-left: 150px;
+	padding-top: 1rem;
+	background-color: antiquewhite;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 46px 1fr;
+}
+
+form svg {
+	width: 38px;
+}
+
+form input {
+	background-color: rgb(223, 219, 219);
+	max-width: 900px;
+	width: 100%;
+	height: 2.3rem;
+	border-radius: 1.5rem;
+	border: none;
+	padding: 1rem;
+}
+
+.account-info {
+	display: grid;
+	grid-template-columns: 50px 100px 140px;
+	grid-template-rows: 54px;
+	grid-column: 2 / 4;
+	justify-content: center;
+}
+
+.account-info svg {
+	width: 38px;
+	align-self: center;
+}
+
+.account-info img {
+	width: 54px;
+	justify-self: center;
+	align-self: center;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.account-info span {
+	align-self: center;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.composer {
+	display: grid;
+	grid-column: 1 / 4;
+	grid-template-columns: 100px 1.8fr 3fr;
+	align-content: center;
+	align-items: center;
+}
+
+.composer img {
+	width: 70px;
+	border-radius: 50%;
+	object-fit: cover;
+
+}
+
+.composer p:first-child {
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.profile-intro p:last-child {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+.button-wrapper {
+	display: grid;
+	grid-template-columns: 110px 110px 110px;
+	justify-content: center;
+	gap: 60px;
+	grid-column: 3 / 4;
+}
+
+.compose-btn {
+	padding: 10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: white;
+	background-color: skyblue;
+	border: none;
+	border-radius: 26px;
 }
