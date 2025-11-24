@@ -25,5 +25,7 @@ The emphasis was placed on learning to structure a page with multiple grid conta
 one another.
 
 ---
+## Live Demo
+[View the Live Demo](https://barryweb.github.io/admin-dashboard/)
 
 Thank you for reviewing my Admin Dashboard project!
